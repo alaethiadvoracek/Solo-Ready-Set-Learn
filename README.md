@@ -69,3 +69,11 @@ Add additional notes about how to deploy this on a live system
 ## Acknowledgments
 
 * Hat tip to anyone who's code was used
+
+
+## TODO 
+- FRIDAY FEB 9th: 
+- [x] file structure 
+- [x] server running 
+- [x] navigation bar 
+- [] Home View 

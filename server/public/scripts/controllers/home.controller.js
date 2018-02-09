@@ -1,4 +1,4 @@
-myApp.controller('NumbersController', ['AppService', function(AppService) {
+myApp.controller('HomeController', ['AppService', function(AppService) {
     const self = this;
 
 //--------FUNCTIONS--------//
