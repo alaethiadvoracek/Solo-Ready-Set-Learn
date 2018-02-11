@@ -1,17 +1,16 @@
-<ul >
-        <li>
-            <a href="#!/home">Home</a>
-        </li>
-        <li>
-            <a href="#!/alphabet">ABC's</a>
-        </li>
-        <li>
-            <a href="#!/numbers">Numbers</a>
-        </li>
-        <!-- <li>
-            <a href="#!/shapes">Shapes</a>
-        </li>
-        <li>
-            <a href="#!/colors">Colors</a>
-        </li> -->
-    </ul>
+<div ng-controller="HomeController" ng-cloak>
+    <md-content class="md-padding">
+    <md-nav-bar
+        md-selected-nav-item="currentNavItem"
+        nav-bar-aria-label="navigation links">
+    <md-nav-item md-nav-href="#!/home" name="home" class="navh">
+        Home
+    </md-nav-item>
+    <md-nav-item md-nav-href="#!/alphabet" name="alphabet" class="nava">
+        Alphabet
+    </md-nav-item>
+    <md-nav-item md-nav-href="#!/numbers" name="numbers" class="navn">
+        Numbers
+    </md-nav-item>
+      
+      

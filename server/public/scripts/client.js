@@ -1,5 +1,12 @@
- let myApp = angular.module('myApp', ['ngRoute' ]);
-
+ let myApp = angular.module('myApp', ['ngRoute', 'ngMaterial' ]);
+ myApp.config(function ($mdThemingProvider) {
+    $mdThemingProvider.theme('default')
+      .primaryPalette('red')
+      .warnPalette('red')
+      .accentPalette('grey')
+      .backgroundPalette('grey');
+    // .dark();
+  });
 myApp.config(function($routeProvider) {
     console.log('config loaded');
     //CLIENT SIDE ROUTES
