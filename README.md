@@ -77,6 +77,6 @@ Add additional notes about how to deploy this on a live system
 - [x] server running 
 - [x] navigation bar functionality
 - [x] Home View 
--SATURDAY FEB 10th: 
+- SATURDAY FEB 10th: 
 - [x] angular material navbar 
 - [] database prep 
