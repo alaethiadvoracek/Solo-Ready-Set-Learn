@@ -1,13 +1,13 @@
 /* Home View */
 .title {
     font-family: 'Nanum Pen Script', cursive;
-    color: rgb(4, 97, 173);
+    color: rgb(45, 10, 243);
     font-size: 80px;
     text-align: center;
 }
 .slogan {
     font-family: 'Nanum Brush Script', cursive;
-    color: rgb(7, 140, 248);
+    color: rgb(251, 8, 8);
     font-size: 35px;
     margin-top: -70px;
     text-align: center;
@@ -20,11 +20,17 @@
     margin-top: 90px;
 }
 .ng-scope {
-    background-color: rgb(110, 248, 163);
+    background-color: white;
 }
 .navh, .nava, .navn {
     font-family: 'Walter Turncoat', cursive;
     color: black;
     font-weight: 900;
     width: 100%;
+}
+.row {
+    text-align: center;
+}
+#image{
+    margin-top: -50px;
 }

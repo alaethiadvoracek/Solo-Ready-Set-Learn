@@ -76,4 +76,4 @@ Add additional notes about how to deploy this on a live system
 - [x] file structure 
 - [x] server running 
 - [x] navigation bar 
-- [] Home View 
+- [x] Home View 
