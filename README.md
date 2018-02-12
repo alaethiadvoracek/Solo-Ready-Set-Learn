@@ -75,6 +75,7 @@ Add additional notes about how to deploy this on a live system
 - FRIDAY FEB 9th: 
 - [x] file structure 
 - [x] server running 
+<<<<<<< HEAD
 - [x] navigation bar functionality
 - [x] Home View 
 - SATURDAY FEB 10th: 
