@@ -34,3 +34,16 @@
 #image{
     margin-top: -50px;
 }
+.letter, .image, .column3 {
+    float: left;
+    width: 33.33%;
+}
+
+.row2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.row {
+    color: rgb(8, 235, 8)
+}

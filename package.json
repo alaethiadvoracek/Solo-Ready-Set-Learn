@@ -4,7 +4,7 @@
   "description": "Ready Set Learn is a full-stack educational app centered towards young children to help them learn basic things like the alphabet, numbers, shapes and colors. The app essentially is a virtual flash card that allows them to go back and forth through different learning categories that have visual, speaking, and reading aspects to help them learn the way they learn best.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1", 
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/server.js"
   },
   "repository": {
@@ -25,6 +25,7 @@
     "angular-messages": "^1.6.9",
     "angular-route": "^1.6.9",
     "body-parser": "^1.18.2",
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "material-design-icons": "^3.0.1"
   }
 }
