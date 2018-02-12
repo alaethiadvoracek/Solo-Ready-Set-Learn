@@ -3,7 +3,15 @@ myApp.service('AppService',['$http', function($http) {
     const self = this;
 
     /* GET REQUEST */
-
+    self.alphabetData = {};
+    self.getAlphabet = function() {
+        $http.get('/alphabet')
+        .then((result)=>{
+            console.log('get result: ', result.data);
+            self.alphabetData.list = result.data;
+            console.log(self.alphabetData);
+        })
+    }
 
     /* POST REQUESTS */
 
