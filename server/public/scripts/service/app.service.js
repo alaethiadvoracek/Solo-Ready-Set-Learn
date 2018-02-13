@@ -9,12 +9,17 @@ myApp.service('AppService',['$http', function($http) {
         .then((result)=>{
             console.log('get result: ', result.data);
             self.alphabetData.list = result.data;
-            console.log(self.alphabetData);
         })
-    }
+    }//end get alphabet data
 
     /* POST REQUESTS */
-
+    self.postData = function() {
+        $http.post('/alphabet')
+        .then((result) => {
+            console.log('post result: ', result.data);
+            self.alphabetData.list = result.data;
+        })
+    }//end post alphabet data
 
     /* PUT REQUESTS */
 }]);//end service

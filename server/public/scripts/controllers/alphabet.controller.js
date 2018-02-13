@@ -3,8 +3,12 @@ myApp.controller('AlphabetController', ['AppService', function(AppService) {
 
 //--------FUNCTIONS--------//
 
-self.getAlphabetInfo= function(){
+self.getAlphabetInfo = function(){
     AppService.getAlphabet();
 }//request data from the database 
+self.getAlphabetInfo();
 
+self.postAlphabetData = function() {
+    AppService.postData();
+}
 }]);//end controller

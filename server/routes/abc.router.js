@@ -2,24 +2,33 @@ const express = require('express');
 const router = express.Router();
 const pool = require('../modules/pool');
 
-/* GET REQUEST */
-router.get('/alphabet', (req, res) => {
-    const queryString = 'SELECT * FROM view_images WHERE "type"= letter';
+/* GET REQUESTS */
+router.get('/', (req, res) => {
+    const queryString = 'SELECT * FROM view_images';
     pool.query(queryString)
         .then(result => {
-            console.log('Getting Alphabet info ');
+            console.log('Getting Alphabet info');
             res.send(result.rows);
-            console.log('did it get here');
         })
         .catch(err => {
-            console.log('hit error of post');
+            console.log('hit error on get', err);
             res.sendStatus(500);
         });
 
 });
 
 /* POST REQUESTS */
-
+// router.post('/', (req, res) => {
+//     for(let i = 0; i < result.length; i++)
+//     .then(result => {
+//         console.log('Posting Alphabet info');
+//         res.send(result.rows);
+//     })
+//     .catch(err => {
+//         console.log('hit error on post', err);
+//         res.sendStatus(500);
+//     });
+// })
 
 /* PUT REQUESTS */
 
