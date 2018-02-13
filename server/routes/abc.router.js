@@ -4,7 +4,7 @@ const pool = require('../modules/pool');
 
 /* GET REQUESTS */
 router.get('/', (req, res) => {
-    const queryString = 'SELECT * FROM view_images';
+    const queryString = 'SELECT * FROM view_info JOIN images ON images.id = view_info.id;';
     pool.query(queryString)
         .then(result => {
             console.log('Getting Alphabet info');
@@ -17,19 +17,5 @@ router.get('/', (req, res) => {
 
 });
 
-/* POST REQUESTS */
-// router.post('/', (req, res) => {
-//     for(let i = 0; i < result.length; i++)
-//     .then(result => {
-//         console.log('Posting Alphabet info');
-//         res.send(result.rows);
-//     })
-//     .catch(err => {
-//         console.log('hit error on post', err);
-//         res.sendStatus(500);
-//     });
-// })
-
-/* PUT REQUESTS */
 
 module.exports = router;
