@@ -34,16 +34,35 @@
 #image1{
     margin-top: -50px;
 }
-.letter, .image, .column3 {
-    float: left;
-    width: 33.33%;
-}
-
-.row2:after {
-    content: "";
-    display: table;
-    clear: both;
-}
 .row {
     color: rgb(8, 235, 8)
+}
+.upperLower {
+    font-family: 'Nanum Pen Script', cursive;
+    color: rgb(45, 10, 243);
+    font-size: 120px;
+    margin-left: 15px;
+    margin-top: -15px; 
+}
+#border {
+    font-family: 'Nanum Pen Script', cursive;
+    margin-top: -155px;  
+    color: red;
+}
+.desc {
+    font-family: 'Walter Turncoat', cursive;
+    font-size: 45px;
+    text-align: center;
+}
+#abcimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+.next {
+    position: absolute;
+    right: 0px;
+    width: 55px;
+    padding: 10px;
 }
