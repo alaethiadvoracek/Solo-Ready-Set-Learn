@@ -12,4 +12,13 @@ myApp.service('AppService',['$http', function($http) {
         })
     }//end get alphabet data
 
+    self.NumbersData = {};
+    self.getNumbers = function() {
+        $http.get('/numbers')
+        .then((result)=>{
+            console.log('get result: ', result.data);
+            self.NumbersData.list = result.data;
+        })
+    }//end get alphabet data
+
 }]);//end service

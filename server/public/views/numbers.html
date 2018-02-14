@@ -1,1 +1,16 @@
-<h1>Numbers</h1>
+<div class="row2"> 
+        <div>
+            <h1 class="Number">{{vm.NumbersData.list[vm.index].label}}</h1>
+            <h1 id="border">--------------</h1>
+            <md-button ng-click="vm.previousNumber()">
+                    <md-icon class= "icon1" md-svg-icon="images/left.svg"></md-icon> 
+                </md-button>
+                <md-button ng-click="vm.nextNumber()" >
+                    <md-icon class="icon2" md-svg-icon="images/right.svg"></md-icon> 
+                </md-button>
+            <img id="numbersimg" src="{{vm.NumbersData.list[vm.index].image_path}}{{vm.NumbersData.list[vm.index].image_finger}}" >
+            <br>
+            <h2 class="desc">{{vm.NumbersData.list[vm.index].description}}</h2> 
+           
+        </div>
+    </div>

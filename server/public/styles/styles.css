@@ -42,21 +42,28 @@
     color: rgb(45, 10, 243);
     font-size: 120px;
     margin-left: 15px;
-    margin-top: -15px; 
+    margin-top: -1px; 
 }
 #border {
     font-family: 'Nanum Pen Script', cursive;
-    margin-top: -155px;  
+    margin-top: -130px;  
     color: red;
 }
 .desc {
     font-family: 'Walter Turncoat', cursive;
     font-size: 45px;
-    text-align: center;
+    text-align: center;;
+    margin-top: -30px;
+
 }
 #abcimg {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    
+
+}
+
+#abcimg {
+    margin-top: -165px;
 }

@@ -4,7 +4,7 @@ const pool = require('../modules/pool');
 
 /* GET REQUESTS */
 router.get('/', (req, res) => {
-    const queryString = 'SELECT * FROM view_info JOIN images ON images.id = view_info.id;';
+    const queryString = 'SELECT * FROM view_info JOIN images ON images.id = view_info.id ORDER BY images.id;';
     pool.query(queryString)
         .then(result => {
             console.log('Getting Alphabet info');
