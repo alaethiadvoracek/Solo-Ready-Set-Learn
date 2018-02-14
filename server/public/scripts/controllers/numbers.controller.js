@@ -24,5 +24,8 @@ self.previousNumber = function () {
         self.index = 9;
     }//end if
 }//go to previous Number
+self.sayMsg = function(msg) {
+    AppService.sayMsg(msg)
+}//end call to service for speech utterance 
 
 }]);//end controller

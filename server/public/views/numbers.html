@@ -8,9 +8,8 @@
                 <md-button ng-click="vm.nextNumber()" >
                     <md-icon class="icon2" md-svg-icon="images/right.svg"></md-icon> 
                 </md-button>
-            <img id="numbersimg" src="{{vm.NumbersData.list[vm.index].image_path}}"> 
+            <img id="numbersimg" ng-click="vm.sayMsg(vm.numbersData.list[vm.index].description)" src="{{vm.NumbersData.list[vm.index].image_path}}"> 
             <br>
-            <h2 class="desc">{{vm.NumbersData.list[vm.index].description}}</h2> 
-           
+            <h2 class="desc">{{vm.NumbersData.list[vm.index].description}}</h2>   
         </div>
     </div>
