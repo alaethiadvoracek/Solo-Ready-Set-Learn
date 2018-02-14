@@ -1,6 +1,9 @@
 <div class="row2" {{vm.alphabetData.list[vm.index]}}>
     <div>
         <h1 class="upperLower">{{vm.alphabetData.list[vm.index].label}}</h1>
+        <md-button ng-click="vm.sayMsg(vm.alphabetData.list[vm.index].description)" >
+            <md-icon md-svg-icon="images/right.svg"></md-icon> 
+        </md-button>
         <h1 id="border">--------------</h1>
     </div>
     <div class="buttons">
