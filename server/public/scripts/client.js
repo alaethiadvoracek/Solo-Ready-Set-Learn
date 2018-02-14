@@ -23,6 +23,14 @@ myApp.config(function($routeProvider) {
         templateUrl: '/views/numbers.html', 
         controller: "NumbersController as vm"
     })//end numbers
+    .when('/colors', {
+        templateUrl: '/views/colors.html', 
+        controller: "ColorsController as vm"
+    })//end colors
+    .when('/shapes', {
+        templateUrl: '/views/shapes.html', 
+        controller: "ShapesController as vm"
+    })//end colors
     .otherwise(
         { redirectTo: '/home'}
     )//end redirect
