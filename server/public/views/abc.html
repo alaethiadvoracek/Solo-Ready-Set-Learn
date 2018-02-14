@@ -1,9 +1,6 @@
 <div class="row2"> 
     <div>
         <h1 class="upperLower">{{vm.alphabetData.list[vm.index].label}}</h1>
-        <md-button ng-click="vm.sayMsg(vm.alphabetData.list[vm.index].description)" >
-            <md-icon md-svg-icon="images/right.svg"></md-icon> 
-        </md-button>
         <h1 id="border">--------------</h1>
         <md-button ng-click="vm.previousLetter()">
                 <md-icon class= "icon1" md-svg-icon="images/left.svg"></md-icon> 
@@ -14,6 +11,9 @@
         <img id="abcimg" src="{{vm.alphabetData.list[vm.index].image_path}}" >
         <br>
         <h2 class="desc">{{vm.alphabetData.list[vm.index].description}}</h2> 
+        <md-button class="msg" ng-click="vm.sayMsg(vm.alphabetData.list[vm.index].description)" >
+            <md-icon md-svg-icon="images/volume.svg"></md-icon> 
+        </md-button>
        
     </div>
 </div>
