@@ -9,20 +9,20 @@ self.getNumbersInfo = function(){
 self.getNumbersInfo();
 
 
-self.index = 26;
+self.index = 0;
 
 self.nextNumber = function() {
     self.index ++;
-    if(self.index > 36){
-        self.index = 26;
+    if(self.index > 9){
+        self.index = 0;
     }//end if
-}//go to next letter
+}//go to next Number
     
 self.previousNumber = function () {
     self.index --;
-    if(self.index < 26){
-        self.index = 36;
+    if(self.index < 0){
+        self.index = 9;
     }//end if
-}//go to previous letter
+}//go to previous Number
 
 }]);//end controller
