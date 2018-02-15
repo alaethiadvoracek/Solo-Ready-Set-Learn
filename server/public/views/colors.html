@@ -1,1 +1,19 @@
-<h1>COLORS!!!</h1>
+<div class="row2"> 
+    <div>
+        <h1 class="color">{{vm.colorsData.list[vm.index].label}}</h1>      
+    <div class="container">
+            <md-button ng-click="vm.previousColor()">
+                <md-icon class= "icon1" md-svg-icon="images/left.svg"></md-icon> 
+            </md-button>
+        <img id="colimg" ng-click="vm.sayMsg(vm.colorsData.list[vm.index].label)" src="{{vm.colorsData.list[vm.index].image_path}}" >
+        <img id="colimg" ng-click="vm.sayMsg(vm.colorsData.list[vm.index].label)" src="{{vm.colorsData.list[vm.index].image_path2}}" >
+        <img id="colimg" ng-click="vm.sayMsg(vm.colorsData.list[vm.index].label)" src="{{vm.colorsData.list[vm.index].image_path3}}" >
+        <img id="colimg" ng-click="vm.sayMsg(vm.colorsData.list[vm.index].label)" src="{{vm.colorsData.list[vm.index].image_path4}}" >
+        <md-button ng-click="vm.nextColor()" >
+            <md-icon class="icon2" md-svg-icon="images/right.svg"></md-icon> 
+        </md-button>
+    </div>
+        <br>
+        <h2 class="desc">{{vm.colorsData.list[vm.index].description}}</h2>  
+    </div>
+</div>

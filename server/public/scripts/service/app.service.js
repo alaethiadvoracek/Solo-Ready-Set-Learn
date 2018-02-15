@@ -19,7 +19,17 @@ myApp.service('AppService',['$http', function($http) {
             console.log('get result: ', result.data);
             self.NumbersData.list = result.data;
         })
-    }//end get alphabet data
+    }//end get numbers data
+    
+    self.colorsData = {};
+    self.getColors = function() {
+        $http.get('/colors')
+        .then((result)=>{
+            console.log('get result: ', result.data);
+            self.colorsData.list = result.data;
+        })
+    }//end get color data
+
     self.sayMsg = function(message){
         let msg = new SpeechSynthesisUtterance(message);
         var voices = window.speechSynthesis.getVoices();
