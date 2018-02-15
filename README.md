@@ -71,19 +71,3 @@ Add additional notes about how to deploy this on a live system
 * Hat tip to anyone who's code was used
 
 
-## TODO 
-- FRIDAY FEB 9th: 
-- [x] file structure 
-- [x] server running 
-<<<<<<< HEAD
-- [x] navigation bar functionality
-- [x] Home View 
-- SATURDAY FEB 10th: 
-- [x] angular material navbar 
-- SUNDAY FEB 11th: 
-- [x] Images 
-- [x] Image on home view
-- [x] Home View styling
-- MONDAY FEB 12th: 
-- [] Database 
-- [] Alphabet View (arrangment data back)
