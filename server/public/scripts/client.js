@@ -1,4 +1,4 @@
- let myApp = angular.module('myApp', ['ngRoute', 'ngMaterial' ]);
+ let myApp = angular.module('myApp', ['ngRoute', 'ngMaterial', 'ngAnimate' ]);
  myApp.config(function ($mdThemingProvider) {
     $mdThemingProvider.theme('default')
       .primaryPalette('red')
