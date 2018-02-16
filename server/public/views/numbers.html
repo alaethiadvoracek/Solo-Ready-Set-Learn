@@ -6,12 +6,12 @@
             <md-button ng-click="vm.previousNumber()">
                     <md-icon class= "icon1" md-svg-icon="images/left.svg"></md-icon> 
                 </md-button>
+                <img id="colimg" ng-click="vm.sayMsg(vm.NumbersData.list[vm.index].description)" src="{{vm.NumbersData.list[vm.index].image_path}}"> 
                 <md-button ng-click="vm.nextNumber()" >
                     <md-icon class="icon2" md-svg-icon="images/right.svg"></md-icon> 
                 </md-button>
-            <img id="numbersimg" ng-click="vm.sayMsg(vm.NumbersData.list[vm.index].description)" src="{{vm.NumbersData.list[vm.index].image_path}}"> 
-            <br>
         </div>
+            <br>
             <h2 class="desc">{{vm.NumbersData.list[vm.index].description}}</h2>   
         </div>
     </div>
