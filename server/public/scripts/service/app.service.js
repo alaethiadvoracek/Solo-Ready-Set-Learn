@@ -30,6 +30,15 @@ myApp.service('AppService',['$http', function($http) {
         })
     }//end get color data
 
+    self.ShapesData = {};
+    self.getShapes = function() {
+        $http.get('/shapes')
+        .then((result)=>{
+            console.log('get result: ', result.data);
+            self.ShapesData.list = result.data;
+        })
+    }//end get shape data
+
     self.sayMsg = function(message){
         let msg = new SpeechSynthesisUtterance(message);
         var voices = window.speechSynthesis.getVoices();

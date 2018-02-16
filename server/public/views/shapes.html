@@ -1,1 +1,17 @@
-<h1>SHAPES!!!</h1>
+<div class="row2"> 
+        <div>
+            <h1 class="color">{{vm.ShapesData.list[vm.index].label}}</h1>      
+        <div class="container">
+                <md-button ng-click="vm.previousShape()">
+                    <md-icon class= "icon1" md-svg-icon="images/left.svg"></md-icon> 
+                </md-button>
+            <img id="colimg" ng-click="vm.sayMsg(vm.ShapesData.list[vm.index].label)" src="{{vm.ShapesData.list[vm.index].image_path}}" >
+            <img id="colimg" ng-click="vm.sayMsg(vm.ShapesData.list[vm.index].image_desc)" src="{{vm.ShapesData.list[vm.index].image_path2}}" >
+            <md-button ng-click="vm.nextShape()" >
+                <md-icon class="icon2" md-svg-icon="images/right.svg"></md-icon> 
+            </md-button>
+        </div>
+            <br>
+            <h2 class="desc">{{vm.ShapesData.list[vm.index].description}}</h2>  
+        </div>
+    </div>
