@@ -2,6 +2,7 @@
         <div>
             <h1 class="Number">{{vm.NumbersData.list[vm.index].label}}</h1>
             <h1 id="border">--------</h1>
+        <div class="container">
             <md-button ng-click="vm.previousNumber()">
                     <md-icon class= "icon1" md-svg-icon="images/left.svg"></md-icon> 
                 </md-button>
@@ -10,6 +11,7 @@
                 </md-button>
             <img id="numbersimg" ng-click="vm.sayMsg(vm.NumbersData.list[vm.index].description)" src="{{vm.NumbersData.list[vm.index].image_path}}"> 
             <br>
+        </div>
             <h2 class="desc">{{vm.NumbersData.list[vm.index].description}}</h2>   
         </div>
     </div>
