@@ -2,14 +2,16 @@
     <div>
         <h1 class="upperLower">{{vm.alphabetData.list[vm.index].label}}</h1>
         <h1 id="border">--------------</h1>
+    <div class="container">
         <md-button ng-click="vm.previousLetter()">
-                <md-icon class= "icon1" md-svg-icon="images/left.svg"></md-icon> 
-            </md-button>
-            <md-button ng-click="vm.nextLetter()" >
-                <md-icon class="icon2" md-svg-icon="images/right.svg"></md-icon> 
-            </md-button>
+            <md-icon class= "icon1" md-svg-icon="images/left.svg"></md-icon> 
+        </md-button>
         <img id="abcimg" ng-click="vm.sayMsg(vm.alphabetData.list[vm.index].description)" src="{{vm.alphabetData.list[vm.index].image_path}}" >
-        <br>
+        <md-button ng-click="vm.nextLetter()" >
+            <md-icon class="icon2" md-svg-icon="images/right.svg"></md-icon> 
+        </md-button>
+    </div>
+    <br>
         <h2 class="desc">{{vm.alphabetData.list[vm.index].description}}</h2>  
     </div>
 </div>
