@@ -80,3 +80,6 @@
     font-size: 80px;
     text-align: center;
 }
+.icon1 .icon2 {
+    transition: all ease-in 0.25s;
+}
