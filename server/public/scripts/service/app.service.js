@@ -19,11 +19,30 @@ myApp.service('AppService',['$http', function($http) {
             console.log('get result: ', result.data);
             self.NumbersData.list = result.data;
         })
-    }//end get alphabet data
+    }//end get numbers data
+    
+    self.colorsData = {};
+    self.getColors = function() {
+        $http.get('/colors')
+        .then((result)=>{
+            console.log('get result: ', result.data);
+            self.colorsData.list = result.data;
+        })
+    }//end get color data
+
+    self.ShapesData = {};
+    self.getShapes = function() {
+        $http.get('/shapes')
+        .then((result)=>{
+            console.log('get result: ', result.data);
+            self.ShapesData.list = result.data;
+        })
+    }//end get shape data
+
     self.sayMsg = function(message){
         let msg = new SpeechSynthesisUtterance(message);
         var voices = window.speechSynthesis.getVoices();
-        msg.voice = voices[7]; // Note: voices are unpredictable at the moment, still experimental tech. 7 is the clearest male, 17 the clearest female, 25 is good
+        msg.voice = voices[25]; // Note: voices are unpredictable at the moment, still experimental tech. 7 is the clearest male, 17 the clearest female, 25 is good
         msg.voiceURI = 'native';
         msg.volume = 2; // 0 to 1
         msg.rate = .8; // 0.1 to 10
