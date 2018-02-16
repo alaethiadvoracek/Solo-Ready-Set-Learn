@@ -10,6 +10,10 @@ myApp.service('AppService',['$http', function($http) {
             console.log('get result: ', result.data);
             self.alphabetData.list = result.data;
         })
+        .catch(err => {
+            console.log('hit error on getting alphabet data', err);
+            res.sendStatus(500);
+        });
     }//end get alphabet data
 
     self.NumbersData = {};
@@ -19,6 +23,10 @@ myApp.service('AppService',['$http', function($http) {
             console.log('get result: ', result.data);
             self.NumbersData.list = result.data;
         })
+        .catch(err => {
+            console.log('hit error on getting numbers', err);
+            res.sendStatus(500);
+        });
     }//end get numbers data
     
     self.colorsData = {};
@@ -28,6 +36,10 @@ myApp.service('AppService',['$http', function($http) {
             console.log('get result: ', result.data);
             self.colorsData.list = result.data;
         })
+        .catch(err => {
+            console.log('hit error on getting colors', err);
+            res.sendStatus(500);
+        });
     }//end get color data
 
     self.ShapesData = {};
@@ -37,6 +49,10 @@ myApp.service('AppService',['$http', function($http) {
             console.log('get result: ', result.data);
             self.ShapesData.list = result.data;
         })
+        .catch(err => {
+            console.log('hit error on getting shapes', err);
+            res.sendStatus(500);
+        });
     }//end get shape data
 
     self.sayMsg = function(message){
