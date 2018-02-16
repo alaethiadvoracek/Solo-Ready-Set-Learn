@@ -34,9 +34,7 @@
 #image1{
     margin-top: -50px;
 }
-.row {
-    color: rgb(8, 235, 8)
-}
+
 .upperLower, .Number {
     font-family: 'Nanum Pen Script', cursive;
     color: rgb(45, 10, 243);
@@ -81,7 +79,4 @@
     font-family:'Nanum Pen Script', cursive;
     font-size: 90px;
     text-align: center;
-}
-.icon1 .icon2 {
-    transition: all ease-in 0.25s;
 }
