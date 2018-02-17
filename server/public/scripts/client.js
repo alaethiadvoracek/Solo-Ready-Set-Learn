@@ -1,4 +1,4 @@
- let myApp = angular.module('myApp', ['ngRoute', 'ngMaterial', 'ngAnimate' ]);
+ let myApp = angular.module('myApp', ['ngRoute', 'ngMaterial' ]);
  myApp.config(function ($mdThemingProvider) {
     $mdThemingProvider.theme('default')
       .primaryPalette('red')
@@ -30,7 +30,11 @@ myApp.config(function($routeProvider) {
     .when('/shapes', {
         templateUrl: '/views/shapes.html', 
         controller: "ShapesController as vm"
-    })//end colors
+    })//end shapes
+    .when('/game', {
+        templateUrl: '/views/game.html', 
+        controller: "GameController as vm"
+    })//end shapes
     .otherwise(
         { redirectTo: '/home'}
     )//end redirect
