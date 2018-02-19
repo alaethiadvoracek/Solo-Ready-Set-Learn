@@ -31,7 +31,7 @@ myApp.config(function($routeProvider) {
         templateUrl: '/views/shapes.html', 
         controller: "ShapesController as vm"
     })//end shapes
-    .when('/game', {
+    .when('/games', {
         templateUrl: '/views/game.html', 
         controller: "GameController as vm"
     })//end shapes

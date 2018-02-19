@@ -1,1 +1,28 @@
-<h1>Can you find all of the pairs?</h1>
+<div class="row2"> 
+    <div>
+        <h1 class="game">{{vm.gamesData.list[vm.index].description}}</h1>      
+        <div class="container">
+               
+        <div class="row">
+            <div class="column">
+                <md-button ng-click="vm.previousGame()">
+                    <md-icon class= "icon1" md-svg-icon="images/left.svg"></md-icon> 
+                </md-button>
+                <img id="colimg" src="{{vm.gamesData.list[vm.index].image_path}}">
+                <img id="colimg" src="{{vm.gamesData.list[vm.index].image_path2}}">
+                <img id="colimg" src="{{vm.gamesData.list[vm.index].image_path3}}">
+                <img id="colimg" src="{{vm.gamesData.list[vm.index].image_path4}}">
+                <md-button ng-click="vm.nextGame()" >
+                    <md-icon class="icon2" md-svg-icon="images/right.svg"></md-icon> 
+                </md-button>
+            </div>
+            <div class="column2">
+                <img id="colimg" src="{{vm.gamesData.list[vm.index].image_path3}}">
+                <img id="colimg" src="{{vm.gamesData.list[vm.index].image_path4}}">
+                <img id="colimg" src="{{vm.gamesData.list[vm.index].image_path}}">
+                <img id="colimg" src="{{vm.gamesData.list[vm.index].image_path2}}">
+            </div>
+        </div>    
+        </div>
+    </div>
+</div>

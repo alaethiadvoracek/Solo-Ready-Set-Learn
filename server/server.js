@@ -14,7 +14,7 @@ app.use('/alphabet', abcRouter);
 app.use('/numbers', numberRouter);
 app.use('/colors', colorsRouter);
 app.use('/shapes', shapesRouter);
-app.use('/shapes', gameRouter);
+app.use('/games', gameRouter);
 
 /** -----------START SERVER----------- */
 app.set('port', process.env.PORT || 2000);

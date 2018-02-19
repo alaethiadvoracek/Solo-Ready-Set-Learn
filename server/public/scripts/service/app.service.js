@@ -55,6 +55,19 @@ myApp.service('AppService', ['$http', function ($http) {
             });
     }//end get shape data
 
+    self.gamesData = {};
+    self.getGames = function () {
+        $http.get('/games')
+            .then((result) => {
+                console.log('getting game results: ', result.data);
+                self.gamesData.list = result.data;
+            })
+            // .catch(err => {
+            //     console.log('hit error on getting games', err);
+            //     res.sendStatus(500);
+            // });
+    }//end get color data
+
     self.sayMsg = function (message) {
         let msg = new SpeechSynthesisUtterance(message);
         var voices = window.speechSynthesis.getVoices();
