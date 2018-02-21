@@ -81,33 +81,28 @@
     font-size: 90px;
     text-align: center;
 }
-.game{
+.game {
     font-family:'Nanum Pen Script', cursive;
     font-size: 60px;
-    text-align: center; 
+    text-align: center;   
 }
-.row {
+.row3 {
+    align-self: center;
+    justify-content: center;
     display: flex;
-    flex-wrap: wrap;
-    display: center;
-    padding: 0 4px;
-  }
-  
-  /* Create two equal columns that sits next to each other */
-  .column {
-    flex: 50%;
-    padding: 0 4px;
-    margin-left: 160px;
-  }
-  .column2 {
-    flex: 50%;
-    padding: 0 4px;
-    margin-left: 280px;
-  }
-  
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    
-    
-  }
+}
+.row4 {
+    align-self: center;
+    justify-content: center;
+    display: flex;
+}
+.imageBorder {
+    border: rgb(89, 4, 97);
+    border-style: solid;
+    border-width: 4px;
+}
+.imageBorder1 {
+    border: rgb(89, 4, 97);
+    border-style: solid;
+    border-width: 4px;
+}

@@ -3,27 +3,25 @@ myApp.controller('GameController', ['AppService', function(AppService) {
 
 //--------FUNCTIONS--------//
 self.gamesData = AppService.gamesData
+self.gamesData1 = AppService.gamesData1
+
+//call to service to get game info from the database
 self.getGamesInfo = function(){
     AppService.getGames();
 }//request data from the database 
+self.getMoreInfo = function() {
+    AppService.getMoreGames();
+}//request for more info for games from database
 self.getGamesInfo();
-
-
+self.getMoreInfo();
 self.index = 0;
 
-self.nextGame = function() {
-    self.index ++;
-    if(self.index > 3){
-        self.index = 0;
-    }//end if
-}//go to next letter
-    
-self.previousGame = function () {
-    self.index --;
-    if(self.index < 0){
-        self.index = 3;
-    }//end if
-}//go to previous letter 
+//function to add border, show and hide images in game 
+    self.borderShowHide = function (image) {
+        image.addBorder="imageBorder"
+    }//end function to show and hide border 
 
-
-}]);//end controller
+    self.borderToSecondLine = function (image) {
+        image.addBorder1="imageBorder1"
+    }//end function to show and hide border
+}]);//end game controller

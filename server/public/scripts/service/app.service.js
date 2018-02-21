@@ -1,8 +1,10 @@
 myApp.service('AppService', ['$http', function ($http) {
     console.log('inside service');
     const self = this;
-
-    /* GET REQUEST */
+//----------------------------------------//
+            // GET REQUEST //
+//----------------------------------------//
+//function to get alphabet info from the database
     self.alphabetData = {};
     self.getAlphabet = function () {
         $http.get('/alphabet')
@@ -16,6 +18,7 @@ myApp.service('AppService', ['$http', function ($http) {
             });
     }//end get alphabet data
 
+//function to get numbers info from the database
     self.NumbersData = {};
     self.getNumbers = function () {
         $http.get('/numbers')
@@ -29,6 +32,7 @@ myApp.service('AppService', ['$http', function ($http) {
             });
     }//end get numbers data
 
+//function to get colors info from the database
     self.colorsData = {};
     self.getColors = function () {
         $http.get('/colors')
@@ -40,8 +44,9 @@ myApp.service('AppService', ['$http', function ($http) {
                 console.log('hit error on getting colors', err);
                 res.sendStatus(500);
             });
-    }//end get color data
+    }//end get colors data
 
+//function to get shapes info from the database
     self.ShapesData = {};
     self.getShapes = function () {
         $http.get('/shapes')
@@ -53,21 +58,29 @@ myApp.service('AppService', ['$http', function ($http) {
                 console.log('hit error on getting shapes', err);
                 res.sendStatus(500);
             });
-    }//end get shape data
+    }//end get shapes data
 
+//functions to get games info from the database
     self.gamesData = {};
+    self.gamesData1 = {};
     self.getGames = function () {
         $http.get('/games')
             .then((result) => {
                 console.log('getting game results: ', result.data);
                 self.gamesData.list = result.data;
+                
             })
-            // .catch(err => {
-            //     console.log('hit error on getting games', err);
-            //     res.sendStatus(500);
-            // });
-    }//end get color data
+    }//end get games data for first line of game
+    self.getMoreGames = function () {
+        $http.get('/games/more')
+            .then((result) => {
+                console.log('getting more game results: ', result.data);
+                self.gamesData1.list = result.data;
+                
+            })
+    }//end get games data for second line of game
 
+//function for chrome speech synthesizer  
     self.sayMsg = function (message) {
         let msg = new SpeechSynthesisUtterance(message);
         var voices = window.speechSynthesis.getVoices();
@@ -78,6 +91,6 @@ myApp.service('AppService', ['$http', function ($http) {
         msg.pitch = 1; //0 to 2      
         msg.lang = 'en-US';
         window.speechSynthesis.speak(msg);
-    }//end message function
+    }//end say message function
 
 }]);//end service
