@@ -15,13 +15,37 @@ self.getMoreInfo = function() {
 self.getGamesInfo();
 self.getMoreInfo();
 self.index = 0;
+self.selectedImage;
 
 //function to add border, show and hide images in game 
     self.borderShowHide = function (image) {
-        image.addBorder="imageBorder"
-    }//end function to show and hide border 
+        console.log(image);
+        image.addBorder="imageBorder";
+        // check for match
+        if(self.selectedImage) {
+            if(self.selectedImage.image_path == image.image_path) {
+                swal("You found a Match!");
+                self.selectedImage = null;
 
-    self.borderToSecondLine = function (image) {
-        image.addBorder1="imageBorder1"
-    }//end function to show and hide border
+            }else{
+                swal("Try again");
+                self.selectedImage.addBorder = "border";
+                image.addBorder = "border";
+                self.selectedImage = null;
+            }
+        } else {//this is when the image is the first image clicked
+            self.selectedImage = image;
+            
+        }
+    }//end function to show and hide border 
+    self.resetBorders = function () {
+        for(i=0; i<self.gamesData.list.length; i++){
+            console.log(self.gamesData.list[i]);
+            self.gamesData.list[i].addBorder = "border";
+        }//loop to reset line one borders
+        for(i=0; i<self.gamesData1.list.length; i++){
+            console.log(self.gamesData1.list[i]);
+            self.gamesData1.list[i].addBorder = "border";
+        }//loop to reset line two borders
+    }//end reset borders
 }]);//end game controller

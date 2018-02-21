@@ -1,18 +1,18 @@
 <div class="row2"> 
-    <div>
-        <h1 class="game">{{vm.gamesData.list[vm.index].description}}</h1>      
-        <div class="container2">
-               
+    <div class="gameHeader">
+        <h1 class="game">{{vm.gamesData.list[vm.index].description}}</h1>
+        <div>
+            <md-button class="md-warn md-raised" ng-click="vm.resetBorders()" ng-class="removeBorder">Play Again</md-button>  
+        </div>
+    </div>   
+        <div class="container2">   
         <div class="row">
             <div class="row3">
                 <img id="colimg" ng-repeat="image in vm.gamesData.list " ng-click="vm.borderShowHide(image)" ng-class="image.addBorder" src="{{image.image_path}}">
             </div>
             <div class="row4">
-                <!-- <img id="colimg" ng-repeat="image in vm.gamesData1.list | limitTo: (2-4 - gamesData1.list.length)"  ng-click="vm.borderToSecondLine" ng-class="image.addBorder1"  src="{{image.image_path}}">
-                <img id="colimg" ng-repeat="image in vm.gamesData1.list | limitTo: (2 - gamesData1.list.length)"  ng-click="vm.borderToSecondLine" ng-class="image.addBorder1"  src="{{image.image_path}}"> -->
                 <img id="colimg" ng-repeat="image in vm.gamesData1.list " ng-click="vm.borderShowHide(image)" ng-class="image.addBorder" src="{{image.image_path}}">
             </div>
         </div>    
-        </div>
     </div>
 </div>

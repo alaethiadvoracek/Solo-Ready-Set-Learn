@@ -86,6 +86,12 @@
     font-size: 60px;
     text-align: center;   
 }
+.gameHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
 .row3 {
     align-self: center;
     justify-content: center;
@@ -101,8 +107,11 @@
     border-style: solid;
     border-width: 4px;
 }
-.imageBorder1 {
-    border: rgb(89, 4, 97);
+.border {
+    border: none;
+}
+borderMatch {
+    border: rgb(27, 238, 8);
     border-style: solid;
     border-width: 4px;
 }
