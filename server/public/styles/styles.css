@@ -1,39 +1,34 @@
 /* Home View */
-.title {
+.title { /* Styling for Title of App */
     font-family: 'Nanum Pen Script', cursive;
     color: rgb(45, 10, 243);
     font-size: 80px;
     text-align: center;
 }
-.slogan {
+.slogan { /* Styling for slogan of App */
     font-family: 'Nanum Brush Script', cursive;
     color: rgb(251, 8, 8);
     font-size: 35px;
     margin-top: -70px;
     text-align: center;
 }
-.continue {
+.continue { /* Styling for Directions of App */
     font-family: 'Walter Turncoat', cursive;
     color: black;
     font-size: 25px;
     text-align: center;
     margin-top: 90px;
 }
-.ng-scope {
-    background-color: white;
-}
-
-.navh, .nava, .navn, .navc, .navs {
-    font-family: 'Walter Turncoat', cursive;
-    color: black;
-    font-weight: 900;
+/* Styling for Navigation menu */
+.navh, .nava, .navn, .navc, .navs { 
     width: 100%;
 }
+/* For home view image */
 .image1{
     margin-top: 50px;
     text-align: center;
 }
-
+/* Alphabet View Letters */
 .upperLower, .Number {
     font-family: 'Nanum Pen Script', cursive;
     color: rgb(45, 10, 243);
@@ -41,6 +36,7 @@
     margin-left: 75px;
     margin-top: -1px; 
 }
+/* Style for underline in Alphabet and Numbers */
 #border {
     font-family: 'Nanum Pen Script', cursive;
     margin-top: -140px;  
@@ -48,6 +44,7 @@
     margin-left: 40px;
 
 }
+/* Styling for description of items in all views */
 .desc {
     font-family: 'Walter Turncoat', cursive;
     font-size: 45px;
@@ -55,6 +52,7 @@
     margin-top: -30px;
 
 }
+/* Styling for placement of images in alphabet and numbers */
 #abcimg, #numbersimg  {
     display: block;
     margin-left: auto;
@@ -62,25 +60,25 @@
     margin-top: -165px;
     
 }
-.msg {
-    width: 10%;
-    height: 10%;
-}
+/* Styling to display colors and shapes images inline */
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     
 }
+/* Used to help display images by their original sizes */
 #colimg{
     object-fit: none;
     
 }
+/* Styling for header of Colors View */
 .color {
     font-family:'Nanum Pen Script', cursive;
     font-size: 90px;
     text-align: center;
 }
+/* Styling for header of Game View*/
 .game {
     font-family:'Nanum Pen Script', cursive;
     font-size: 60px;
@@ -92,6 +90,7 @@
     justify-content: center;
 
 }
+/* Styling for display of game images */
 .row3 {
     align-self: center;
     justify-content: center;
@@ -102,16 +101,13 @@
     justify-content: center;
     display: flex;
 }
+/* Styling for image borders in Game View */
 .imageBorder {
     border: rgb(89, 4, 97);
     border-style: solid;
     border-width: 4px;
 }
+/* Used to reset border to nothing */
 .border {
     border: none;
-}
-borderMatch {
-    border: rgb(27, 238, 8);
-    border-style: solid;
-    border-width: 4px;
 }

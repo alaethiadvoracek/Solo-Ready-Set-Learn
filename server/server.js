@@ -7,9 +7,10 @@ const colorsRouter = require('./routes/colors.router');
 const shapesRouter = require('./routes/shapes.router');
 const gameRouter = require('./routes/game.router');
 
+/** -----------MIDDLEWARE----------- */
 app.use(express.static('server/public/'));
 app.use(bodyParser.json());
-
+//app.use routes 
 app.use('/alphabet', abcRouter);
 app.use('/numbers', numberRouter);
 app.use('/colors', colorsRouter);

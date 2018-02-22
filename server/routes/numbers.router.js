@@ -15,6 +15,6 @@ router.get('/', (req, res) => {
             res.sendStatus(500);
         });
 
-});
+});//end get 
 
 module.exports = router;

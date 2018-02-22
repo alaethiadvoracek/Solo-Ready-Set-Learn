@@ -2,7 +2,7 @@ myApp.service('AppService', ['$http', function ($http) {
     console.log('inside service');
     const self = this;
 //----------------------------------------//
-            // GET REQUEST //
+            // GET REQUESTS //
 //----------------------------------------//
 //function to get alphabet info from the database
     self.alphabetData = {};

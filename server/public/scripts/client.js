@@ -1,15 +1,16 @@
  let myApp = angular.module('myApp', ['ngRoute', 'ngMaterial' ]);
+ //config for angular material theme 
  myApp.config(function ($mdThemingProvider) {
     $mdThemingProvider.theme('default')
       .primaryPalette('red')
       .warnPalette('red')
       .accentPalette('grey')
       .backgroundPalette('grey');
-    // .dark();
-  });
+  });//end config
+  
+//CLIENT SIDE ROUTES
 myApp.config(function($routeProvider) {
     console.log('config loaded');
-    //CLIENT SIDE ROUTES
     $routeProvider 
     .when('/home', {
         templateUrl: '/views/home.html', 
@@ -37,5 +38,5 @@ myApp.config(function($routeProvider) {
     })//end shapes
     .otherwise(
         { redirectTo: '/home'}
-    )//end redirect
+    )//end re-direct
 });//end app config
