@@ -33,7 +33,7 @@ Steps to get the development environment running.
 
 ## Documentation
 
-https://docs.google.com/document/d/1r3vv5_LhEsOGDersFAuI_aFQ6DaNlZmP4biNpycpmyA/edit#heading=h.x5497hm2698b
+https://docs.google.com/document/d/1r3vv5_LhEsOGDersFAuI_aFQ6DaNlZmP4biNpycpmyA/edit?usp=sharing
 
 ### Completed Features
 
