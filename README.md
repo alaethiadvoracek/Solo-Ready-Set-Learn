@@ -15,59 +15,74 @@ Ready Set Learn is a full-stack educational app centered towards young children 
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
+- Run npm install 
+- set up local database (see database.sql for data)
+- Go to localhost:2000 in your browser and it should run! 
+
 ### Prerequisites
 
 Link to software that is required to install the app.
 
 - [Node.js](https://nodejs.org/en/)
-- List other prerequisites here
-
 
 ### Installing
 
 Steps to get the development environment running.
 
-```sql
-CREATE TABLE "users" (
-  "id" serial primary key,
-  "username" varchar(80) not null UNIQUE,
-  "password" varchar(240) not null
-);
-```
-
-## Screen Shot
-
-Include one or two screen shots of your project here (optional). Remove if unused.
+- See database.sql and follow comments 
 
 ## Documentation
 
-Link to a read-only version of your scope document or other relevant documentation here (optional). Remove if unused.
+https://docs.google.com/document/d/1r3vv5_LhEsOGDersFAuI_aFQ6DaNlZmP4biNpycpmyA/edit#heading=h.x5497hm2698b
 
 ### Completed Features
 
-High level list of items completed.
+- [x] Home View: 
+  - [x] Image sourced 
+  - [x] Title, Slogan, Continue into app 
+  - [x] Navigation Bar with icons 
+- [x] Alphabet View:
+  - [x] Carousel Through images from database
+  - [x] Pull description and labels from database 
+  - [x] Speech synthesizer for each image
+- [x] Numbers View: 
+  - [x] Carousel Through images from database
+  - [x] Pull description and labels from database
+  - [x] Speech synthesizer for each image
+- [x] Colors View:
+  - [x] Carousel Through images from database
+  - [x] Pull description from database
+  - [x] Speech Synthesizer for each image
+- [x] Shapes View: 
+  - [x] Carousel Through images from database
+  - [x] Pull description from database
+  - [x] Speech synthesizer for each image 
+- [x] Game View: 
+  - [x] Images from the database 
+  - [x] Border to show up for individual image click
+  - [x] Functionalily and Alert for right or wrong match
+  - [x] Play Again Button to reset borders to none 
 
-- [x] Feature a
-- [x] Feature b
 
 ### Next Steps
 
 Features that you would like to add at some point in the future.
 
-- [ ] Feature c
+- [ ] Functionality so that when play again button is clicked it will show different images 
+- [ ] Modify database image paths for game images 
+- [ ] Add administration options so that parents can add their own images for thier kids to learn from 
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+* Will need Node.js server and PostgreSQL server to run most efficiently. 
 
 ## Authors
 
-* Alaethia Dvoracek 
-* Tested By: Severyn Thames 
-
+* Alaethia Dvoracek  
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
+* Thank you to all of the instructors at Prime and my cohort Fomalhaut for all of the help and support. 
+* Thank you to my family and friends for everything you have done while on this journey through Prime Digital Academy. 
 
 

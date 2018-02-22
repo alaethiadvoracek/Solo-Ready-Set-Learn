@@ -1,3 +1,4 @@
+/* Create tables First */
 CREATE TABLE view_info  (
 "id" SERIAL PRIMARY KEY, 
 "label" VARCHAR(20),
@@ -23,7 +24,7 @@ CREATE TABLE view_images (
 "view_id" INT REFERENCES "view_info", 
 "type" VARCHAR(20)
 );
-
+/* Run insert into view_info second */
 INSERT INTO view_info ("label", "description","category")
 VALUES ('Aa', 'A is for Aligator', 'alphabet'), ('Bb', 'B is for Bear', 'alphabet'), 
 ('Cc', 'C is for Cat', 'alphabet'), ('Dd', 'D is for Dog', 'alphabet'), ('Ee', 'E is for Elephant', 'alphabet'), 
@@ -65,6 +66,7 @@ VALUES ('TRIANGLE', 'Triangles have three sides', 'shapes', 'watermelon slice'),
 INSERT INTO view_info ("label", "description", "category") 
 VALUES ('GameA', 'Can you pair all of the Animals?', 'game');
 
+/* Run insert into images next */
 INSERT INTO images ("image_path") 
 VALUES('images/aligator.png'), ('images/bear.jpg'), ('images/cat.jpg'), ('images/dog.png'), 
 ('images/elephant.jpg'), ('images/fox.png'), ('images/giraffe.png'), ('images/horse.jpg'), 
