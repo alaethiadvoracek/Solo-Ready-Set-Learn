@@ -35,7 +35,10 @@ myApp.config(function($routeProvider) {
     .when('/games', {
         templateUrl: '/views/game.html', 
         controller: "GameController as vm"
-    })//end shapes
+    })//end game
+    .when('/tech', {
+        templateUrl: '/views/tech.html'
+    })//end tech
     .otherwise(
         { redirectTo: '/home'}
     )//end re-direct

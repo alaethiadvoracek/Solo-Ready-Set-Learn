@@ -1,23 +1,31 @@
 /* Home View */
-.title { /* Styling for Title of App */
+/* Styling for Title of App */
+.title { 
     font-family: 'Nanum Pen Script', cursive;
     color: rgb(45, 10, 243);
     font-size: 80px;
     text-align: center;
 }
-.slogan { /* Styling for slogan of App */
+/* Styling for slogan of App */
+.slogan { 
     font-family: 'Nanum Brush Script', cursive;
     color: rgb(251, 8, 8);
     font-size: 35px;
     margin-top: -70px;
     text-align: center;
 }
-.continue { /* Styling for Directions of App */
+/* Styling for Directions of App and Tech used page */
+.continue { 
     font-family: 'Walter Turncoat', cursive;
     color: black;
     font-size: 25px;
     text-align: center;
     margin-top: 90px;
+    
+}
+/* Styling for background of the entire app */
+.ng-scope { 
+    background-color: white;
 }
 /* Styling for Navigation menu */
 .navh, .nava, .navn, .navc, .navs { 
@@ -110,4 +118,19 @@
 /* Used to reset border to nothing */
 .border {
     border: none;
+}
+/* Styling for tech page */
+.tech{ 
+    font-family: 'Walter Turncoat', cursive;
+    color: blue;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 90px; 
+}
+.techList {
+    list-style-type: none;
+    background-color: red;
+    color: white;
+    border-radius: 150px;
+    font-size: 25px;
 }
