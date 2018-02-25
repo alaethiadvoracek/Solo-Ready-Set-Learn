@@ -114,6 +114,8 @@
     border: rgb(89, 4, 97);
     border-style: solid;
     border-width: 4px;
+     
+    margin: 5px;
 }
 /* Used to reset border to nothing */
 .border {
